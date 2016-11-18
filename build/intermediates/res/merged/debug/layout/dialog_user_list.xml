@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_wrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:gravity="center|top"
+    android:paddingBottom="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:gravity="left|top"
+        android:background="#7188E6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:text="@string/user_list" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dip"
+            android:gravity="center"
+            android:lines="1"
+            android:text="이름"
+            android:textColor="#ff414141"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dip"
+            android:gravity="center"
+            android:lines="1"
+            android:text="나이"
+            android:textColor="#ff414141"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dip"
+            android:gravity="center"
+            android:lines="1"
+            android:text="성별"
+            android:textColor="#ff414141"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dip"
+            android:gravity="center"
+            android:lines="1"
+            android:text="몸무게"
+            android:textColor="#ff414141"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dip"
+            android:gravity="center"
+            android:lines="1"
+            android:text="병 명"
+            android:textColor="#ff414141"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dip"
+            android:gravity="center"
+            android:lines="1"
+            android:text="등록일자"
+            android:textColor="#ff414141"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/user_list"
+        android:layout_width="800dp"
+        android:layout_height="400dp"
+        android:divider="#cccccc" />
+
+</LinearLayout>

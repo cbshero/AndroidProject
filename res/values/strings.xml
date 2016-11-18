@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CamticHarness</string>
+    <string name="app_name_kr">동적 하네스 제어기</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_reg">UserRegActivity</string>
+    <string name="user_reg">사용자 등록</string>
+    <string name="user_list">사용자 목록</string>
+    <string name="user_name">이 름</string>
+    <string name="user_age">나 이</string>
+    <string name="user_sex">성 별</string>
+    <string name="user_weight">몸무게</string>
+    <string name="user_disease">병 명</string>
+
+    <string name="sex_title">성 별</string>
+    <string-array name="sex_type">
+        <item>남 자</item>
+        <item>여 자</item>
+    </string-array>
+
+    <string-array name="speed_type">
+        <item>1 단계</item>
+        <item>2 단계</item>
+        <item>3 단계</item>
+        <item>4 단계</item>
+        <item>5 단계</item>
+        <item>6 단계</item>
+        <item>7 단계</item>
+        <item>8 단계</item>
+        <item>9 단계</item>
+        <item>10 단계</item>
+    </string-array>
+
+    <string name="title_activity_user_list">사용자목록</string>
+    <string name="title_activity_select_menu">메뉴 선택</string>
+    <string name="title_activity_blue_tooth">하네스훈련</string>
+    <string name="title_activity_statics">사용자통계</string>
+
+</resources>

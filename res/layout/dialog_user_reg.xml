@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:gravity="center|top"
+    android:paddingBottom="20dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:gravity="left|top"
+        android:background="#7188E6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:text="@string/user_reg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/s_cell"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="@string/user_name" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textShortMessage"
+                android:background="@drawable/s_cell_input"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:hint="이 름"
+                android:cursorVisible="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/s_cell"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="@string/user_age" />
+
+            <EditText
+                android:id="@+id/user_age"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:background="@drawable/s_cell_input"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:hint="나 이"
+                android:cursorVisible="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/s_cell"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="@string/user_sex" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/user_sex"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/s_cell_input"
+            android:popupBackground="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/s_cell"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="@string/user_disease" />
+
+            <EditText
+                android:id="@+id/user_disease"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textShortMessage"
+                android:background="@drawable/s_cell_input"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:hint="병 명"
+                android:cursorVisible="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/s_cell"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="@string/user_weight" />
+
+            <EditText
+                android:id="@+id/user_weight"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:background="@drawable/s_cell_input"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:hint="몸무게"
+                android:cursorVisible="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/user_reg"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_reg_bg"
+            android:textColor="#ffffff"
+            android:text="@string/user_reg" />
+
+    </LinearLayout>
+</LinearLayout>

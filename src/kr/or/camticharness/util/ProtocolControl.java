@@ -141,7 +141,8 @@ class PostThread extends Thread{
                     deviceData.setForward(Integer.parseInt(msg.substring(32,33)));
                     deviceData.setBackward(Integer.parseInt(msg.substring(33,34)));
                     deviceData.setEmergency(Integer.parseInt(msg.substring(34,35)));
-                    deviceData.setLog(msg);
+                    deviceData.setLog(msg.substring(1,35));// set log
+//                    Log.e("msg.substring(5,10)", Double.parseDouble(msg.substring(15,20))+"");
 
                     m_listener.receiveData(deviceData);
                     ProtocolControl.m_arrDeviceData.add(deviceData);

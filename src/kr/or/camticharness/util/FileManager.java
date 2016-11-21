@@ -1,7 +1,9 @@
 package kr.or.camticharness.util;
 
+import android.Manifest;
 import android.bluetooth.BluetoothClass;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.util.Log;
 
@@ -35,26 +37,31 @@ public class FileManager {
     }
 
     public String getStorageDir(){
-//        File file = new File( Environment.getExternalStoragePublicDirectory( Environment.DIRECTORY_DOWNLOADS), albumName);
-        String strFolder = m_context.getFilesDir().getAbsolutePath();
-        File file = new File(strFolder);
+        String strFolder = null;
+        String ext = Environment.getExternalStorageState();
+        if(ext.equals((Environment.MEDIA_MOUNTED))){
+            strFolder = Environment.getExternalStorageDirectory().getAbsolutePath();
+        }else{
+            strFolder = Environment.getRootDirectory().getAbsolutePath();
+        }
+        File file = new File( strFolder, "/CAMTIC");
         Log.e("file", "file path is "+file.getPath());
         if(!file.exists()){
             file.mkdirs();
-            strFolder = file.getAbsolutePath();
         }
-        return strFolder;
+        return strFolder+"/CAMTIC";
     }
 
     public String writeStringAsFile(ArrayList<DeviceData> arrayList) {
-        String fileContents = null;
+        StringBuilder fileContents = new StringBuilder();
         for(DeviceData deviceData:arrayList){
-            fileContents += deviceData.getLog()+"\n\r";
+            fileContents.append(deviceData.getLog()+"\n");
+//            fileContents.append(deviceData.getLog());
         }
-        if(fileContents!=null) {
+        if(fileContents.length()>0) {
             Date currentTime = new Date();
             java.text.SimpleDateFormat fileFormat = new java.text.SimpleDateFormat("yyyyMMdd_hhmmss", Locale.KOREA);
-            String strFileName = "device_data_"+fileFormat.format(currentTime)+".csv";
+            String strFileName = "device_data_"+fileFormat.format(currentTime)+".txt";
             String strFolderPath = null;
             try {
                 strFolderPath = getStorageDir();
@@ -68,7 +75,7 @@ public class FileManager {
                 FileWriter out = new FileWriter(fileTmp);
 //                Log.e("out1", fileTmp.getAbsolutePath());
 //                Log.e("out2", fileTmp.getPath());
-                out.write(fileContents);
+                out.write(fileContents.toString());
                 out.close();
             } catch (IOException e) {
                 Log.e("error", e.getMessage());

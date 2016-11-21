@@ -1,8 +1,10 @@
 package kr.or.camticharness;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -41,7 +43,7 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
     private ImageButton m_ibStart;
     private ImageButton m_ibStop;
     private Spinner m_spSpeed;
-    private TextView m_tvWeightRate;
+    private TextView m_tvLoadCell;
     private TextView m_tvTime;
 
     private int m_nWorkTime = 0;
@@ -54,12 +56,13 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
     double dbForwBackRate = (int) (400/(Config.FORW_BACK_MAX - Config.FORW_BACK_MIN));
     LinearLayout.LayoutParams m_layoutParams;
 
-    private ImageButton m_ivWeightUp;
-    private ImageButton m_ivWeightDown;
     private ImageButton m_ivMoveUp;
     private ImageButton m_ivMoveDown;
     private ImageButton m_ivMoveBackward;
     private ImageButton m_ivMoveForward;
+
+    private ImageButton m_ibPower;
+    private boolean m_blCurrPower;
 
     Handler handler = new Handler();
 
@@ -94,13 +97,8 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
         ArrayAdapter adapter = ArrayAdapter.createFromResource(m_context, R.array.speed_type, R.layout.textview_spinner2);
         m_spSpeed.setAdapter(adapter);
 
-        m_tvWeightRate = (TextView) findViewById(R.id.weight_rate);
+        m_tvLoadCell = (TextView) findViewById(R.id.loadcell);
         m_tvTime = (TextView) findViewById(R.id.time);
-
-        m_ivWeightUp = (ImageButton)findViewById(R.id.btn_weight_up);
-        m_ivWeightUp.setOnClickListener(this);
-        m_ivWeightDown = (ImageButton)findViewById(R.id.btn_weight_down);
-        m_ivWeightDown.setOnClickListener(this);
 
         m_ivMoveUp = (ImageButton)findViewById(R.id.btn_move_up);
         m_ivMoveUp.setOnClickListener(this);
@@ -110,21 +108,77 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
         m_ivMoveBackward.setOnClickListener(this);
         m_ivMoveForward = (ImageButton)findViewById(R.id.btn_move_right);
         m_ivMoveForward.setOnClickListener(this);
+
+        m_ibPower = (ImageButton) findViewById(R.id.btn_power);
+        m_ibPower.setOnClickListener(this);
     }
 
     private void init() {
+        m_blCurrPower = false;
+
         m_pc = new ProtocolControl(this);
         //Mannual Mode Command Send
-        byte[] command = CommandManager.makeCommand("mode", 0);
-        if(m_pc!=null)
-            m_pc.sendCommand(command);
-
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        if(m_pc.m_blConnectServer) {
+            byte[] command = CommandManager.makeCommand("mode", 0);
+            if (m_pc != null)
+                m_pc.sendCommand(command);
+        }else{
+            Toast.makeText(m_context, "서버에 연결하지 못하였습니다. 다시 시도해 주십시요.", Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
     public void onClick(View view) {
         byte[] command;
         switch (view.getId()){
+            case R.id.btn_power:
+                String strTitle = null;
+                if(m_blCurrPower) {
+                    strTitle = "정말 전원을 종료하시겠습니까?";
+                }else {
+                    strTitle = "정말 전원을 켜시겠습니까?";
+                }
+                AlertDialog.Builder alert_confirm = new AlertDialog.Builder(this);
+                alert_confirm.setMessage(strTitle).setCancelable(false).setPositiveButton("확인",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                byte[] command;
+                                if(m_blCurrPower) {
+                                    m_blCurrPower = false;
+                                    command = CommandManager.makeCommand("power", 0);
+                                    handler.post(new Runnable() {
+                                        public void run() {
+                                            m_ibPower.setImageResource(R.drawable.btn_off);
+                                        }
+                                    });
+                                }else{
+                                    m_blCurrPower = true;
+                                    command = CommandManager.makeCommand("power", 1);
+                                    handler.post(new Runnable() {
+                                        public void run() {
+                                            m_ibPower.setImageResource(R.drawable.btn_on);
+                                        }
+                                    });
+                                }
+                                if (m_pc != null)
+                                    m_pc.sendCommand(command);
+                            }
+                        }).setNegativeButton("취소",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                return;
+                            }
+                        });
+                AlertDialog alert = alert_confirm.create();
+                alert.show();
+                break;
             case R.id.ib_start:
                 if(m_pc.m_blConnectServer) {
                     m_blStart = true;
@@ -138,16 +192,12 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
                     if (m_pc != null)
                         m_pc.sendCommand(command);
 
-                    //체중 지지율 데이터 전송
-                    String strWeightRate = m_tvWeightRate.getText().toString().replaceAll(" ", "").replaceAll("kg", "").replaceAll("\\.", "");
-//                    Log.e("strWeightRate", strWeightRate);
                     try {
-                        command = CommandManager.makeCommand("weight", Integer.parseInt(strWeightRate));
-                        if (m_pc != null)
-                            m_pc.sendCommand(command);
-                    }catch (NumberFormatException e){
-                        Log.e("NumberFormatException", e.toString());
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
                     }
+
                     //몸무게 전송
 /*
                     Users users = getUser();
@@ -210,8 +260,8 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
                         statics.setPractice_type(0);
                         statics.setPractice_time(m_nWorkTime);
                         statics.setUser_sid(m_nUserSid);
-                        if(m_tvWeightRate.getText()!=null) {
-                            String strWeightRate = m_tvWeightRate.getText().toString().replaceAll(" ", "").replaceAll("kg", "");
+                        if(m_tvLoadCell.getText()!=null) {
+                            String strWeightRate = m_tvLoadCell.getText().toString().replaceAll(" ", "").replaceAll("kg", "");
                             statics.setWeight_rate(Double.parseDouble(strWeightRate));
                         }
                         int nSpeedType = m_spSpeed.getSelectedItemPosition();
@@ -229,18 +279,6 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
                         m_pc = null;
                     }
                     finish();
-                }
-                break;
-            case R.id.btn_weight_up:
-                String strWeightRate = m_tvWeightRate.getText().toString().replaceAll(" ", "").replaceAll("kg", "");
-                if(strWeightRate!=null) {
-                    m_tvWeightRate.setText(String.valueOf(Double.parseDouble(strWeightRate)+1));
-                }
-                break;
-            case R.id.btn_weight_down:
-                String strWeightDown = m_tvWeightRate.getText().toString().replaceAll(" ", "").replaceAll("kg", "");
-                if(strWeightDown!=null) {
-                    m_tvWeightRate.setText(String.valueOf(Double.parseDouble(strWeightDown)-1));
                 }
                 break;
             case R.id.btn_move_up:
@@ -302,9 +340,24 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
     public void receiveData(DeviceData data) {
 //        Log.e("camtic", "rcv data==>"+data.getForward_backward()+":"+data.getLeft_right());
         m_data = data;
+        if(m_data.getPower()==1){
+            m_blCurrPower = true;
+            handler.post(new Runnable() {
+                public void run() {
+                    m_ibPower.setImageResource(R.drawable.btn_on);
+                }
+            });
+        }else{
+            m_blCurrPower = false;
+            handler.post(new Runnable() {
+                public void run() {
+                    m_ibPower.setImageResource(R.drawable.btn_off);
+                }
+            });
+        }
         handler.post(new Runnable() {
             public void run() {
-//                m_tvWeightRate.setText(m_data.getLoadcell()+" kg");
+                m_tvLoadCell.setText(m_data.getLoadcell()+" kg");
             }
         });
     }

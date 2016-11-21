@@ -8,6 +8,7 @@ public class Config {
 	
 //	public static final String SVC_URL = "http://tredio.iptime.org";
 	public static final String SVC_URL = "169.254.207.32";
+//	public static final String SVC_URL = "192.168.0.101";
 	public static final int SVC_PORT = 6340;
 
 	public static final String FILE_SAVE_PATH = "/CamticHarness/";

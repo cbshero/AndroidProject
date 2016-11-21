@@ -52,12 +52,12 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg_cc1.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg_bbb.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg_bbb.png"
-    },
-    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg1.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg1.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg_bbb.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg_bbb.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_down_over.png",
@@ -88,8 +88,16 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_1.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_off.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_off.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_6.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_6.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_on.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_on.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\title_t.png",
@@ -160,12 +168,12 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\a4.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_8_over.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_8_over.png"
-    },
-    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\up_over.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\up_over.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_8_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_8_over.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bin.png",
@@ -180,12 +188,12 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_right.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_right.png"
-    },
-    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_left.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_left.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_right.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_right.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_up_over.png",

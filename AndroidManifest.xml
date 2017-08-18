@@ -51,6 +51,27 @@
             android:name=".ResultActivity"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name=".GameMenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name=".CarGameActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name=".PenguinGameActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name=".CarGameStartActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name=".PenguinGameStartActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+
     </application>
 
 </manifest>

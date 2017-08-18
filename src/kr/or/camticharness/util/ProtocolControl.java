@@ -28,6 +28,8 @@ public class ProtocolControl {
     public static final byte[] MODE = {(byte)0x4D, (byte)0x4F, (byte)0x44, (byte)0x45, (byte)0x2D};
     public static final byte[] POWER = {(byte)0x50, (byte)0x4F, (byte)0x57, (byte)0x45, (byte)0x52};
     public static final byte[] START = {(byte)0x53, (byte)0x54, (byte)0x41, (byte)0x52, (byte)0x54};
+    // 02:48:48:49:53:83:84:65:82:84:48:48:48:48:48
+    // 0 0 1 5 S T A R T
     public static final byte[] STOP = {(byte)0x53, (byte)0x54, (byte)0x4F, (byte)0x50, (byte)0x2D};
     public static final byte[] UP = {(byte)0x55, (byte)0x50, (byte)0x2D, (byte)0x2D, (byte)0x2D};
     public static final byte[] DOWN = {(byte)0x44, (byte)0x4F, (byte)0x57, (byte)0x4E, (byte)0x2D};
@@ -40,6 +42,7 @@ public class ProtocolControl {
     public static final byte ZERO = (byte)0x30;
 
     public static ArrayList<DeviceData> m_arrDeviceData;
+    public static ArrayList<String> m_arrStringData;
 
     private Socket m_socket;
     private PostThread m_pt;
@@ -51,7 +54,8 @@ public class ProtocolControl {
 
     public ProtocolControl(AutoModeListener listener){
         m_listener = listener;
-        m_arrDeviceData = new ArrayList<DeviceData>();
+        m_arrDeviceData = new ArrayList<>();
+        m_arrStringData = new ArrayList<>();
     // Thread로 웹서버에 접속
         new Thread() {
             public void run() {
@@ -122,7 +126,8 @@ class PostThread extends Thread{
             //동시작업 쓰레드 코드
             String msg = null;
             while((msg = br.readLine()) != null){
-                Log.e("test", msg);
+//                Log.e("test", msg);
+                ProtocolControl.m_arrStringData.add(msg);
                 if(stop)
                     break;
                 if(msg.substring(0,1).getBytes()[0] == ProtocolControl.STX){
@@ -141,11 +146,11 @@ class PostThread extends Thread{
                     deviceData.setForward(Integer.parseInt(msg.substring(32,33)));
                     deviceData.setBackward(Integer.parseInt(msg.substring(33,34)));
                     deviceData.setEmergency(Integer.parseInt(msg.substring(34,35)));
-                    deviceData.setLog(msg.substring(1,35));// set log
-//                    Log.e("msg.substring(5,10)", Double.parseDouble(msg.substring(15,20))+"");
+                    deviceData.setLog(msg);
+                    Log.e("Start / Stop Data", msg.substring(28,29) + "/" + msg.substring(29,30));
 
-                    m_listener.receiveData(deviceData);
                     ProtocolControl.m_arrDeviceData.add(deviceData);
+                    m_listener.receiveData(deviceData);
 //                    m_listener.receiveData(deviceData);
                     //처리
                 }

@@ -13,6 +13,7 @@ import android.os.Vibrator;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -52,9 +53,9 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
     private boolean m_blStart = false;
     private ProtocolControl m_pc;
 
-    double dbLeftRightRate = (int) (400/(Config.LEFT_RIGHT_MAX - Config.LEFT_RIGHT_MIN));
-    double dbForwBackRate = (int) (400/(Config.FORW_BACK_MAX - Config.FORW_BACK_MIN));
-    LinearLayout.LayoutParams m_layoutParams;
+//    double dbLeftRightRate = (int) (400/(Config.LEFT_RIGHT_MAX - Config.LEFT_RIGHT_MIN));
+//    double dbForwBackRate = (int) (400/(Config.FORW_BACK_MAX - Config.FORW_BACK_MIN));
+//    LinearLayout.LayoutParams m_layoutParams;
 
     private ImageButton m_ivMoveUp;
     private ImageButton m_ivMoveDown;
@@ -81,6 +82,8 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
         m_prefer = new Prefer(m_context);
         m_nUserSid = m_prefer.getCurrUserSid();
 
+        m_pc = new ProtocolControl(this);
+
         findView();
 
         init();
@@ -96,6 +99,20 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
         m_spSpeed = (Spinner) findViewById(R.id.speed);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(m_context, R.array.speed_type, R.layout.textview_spinner2);
         m_spSpeed.setAdapter(adapter);
+        m_spSpeed.setSelection(4);
+        m_spSpeed.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                // 주행 속도 데이터 전송
+                int nSpeedType = m_spSpeed.getSelectedItemPosition();
+                byte[] command = CommandManager.makeCommand("speed", nSpeedType + 1);
+                if (m_pc != null)
+                    m_pc.sendCommand(command);
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+            }
+        });
 
         m_tvLoadCell = (TextView) findViewById(R.id.loadcell);
         m_tvTime = (TextView) findViewById(R.id.time);
@@ -116,7 +133,6 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
     private void init() {
         m_blCurrPower = false;
 
-        m_pc = new ProtocolControl(this);
         //Mannual Mode Command Send
         try {
             Thread.sleep(2000);
@@ -186,30 +202,12 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
                     m_ibStart.setSelected(!m_ibStart.isSelected());
                     m_ibStart.setOnClickListener(null);
 
-                    // 주행 속도 데이터 전송
-                    int nSpeedType = m_spSpeed.getSelectedItemPosition();
-                    command = CommandManager.makeCommand("speed", nSpeedType + 1);
-                    if (m_pc != null)
-                        m_pc.sendCommand(command);
-
-                    try {
-                        Thread.sleep(500);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-
-                    //몸무게 전송
-/*
-                    Users users = getUser();
-                    command = CommandManager.makeCommand("weight", users.getWeight());
-                    if (m_pc != null)
-                        m_pc.sendCommand(command);
-*/
-
                     // 수동 모드 훈련 시작
                     command = CommandManager.makeCommand("start", 0);
                     if (m_pc != null)
                         m_pc.sendCommand(command);
+//                    Toast.makeText(m_context, command[0]+command[1]+command[2]+command[3]+command[4], Toast.LENGTH_SHORT).show();
+                    Log.e("start", command+"");
 
                     //현재 시간 출력
                     new Thread() {
@@ -233,18 +231,23 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
                 }
                 break;
             case R.id.ib_stop:
+                command = CommandManager.makeCommand("stop", 0);
+                if (m_pc != null)
+                    m_pc.sendCommand(command);
+//                Log.e("stop", m_pc+"====>manual");
                 if(m_blStart) {
                     m_blStart = false;
                     m_blStopTime = true;
-                    command = CommandManager.makeCommand("stop", 0);
-                    if (m_pc != null)
-                        m_pc.sendCommand(command);
+                    //정지 버튼 클릭 시 다시 시작 될 수 있도록
+                    m_ibStart.setSelected(false);
+                    m_ibStart.setOnClickListener(this);
 
                     if(m_pc.m_arrDeviceData.size()>0) {
                         FileManager fileManager = new FileManager(m_context);
                         String strFilePath = fileManager.writeStringAsFile(m_pc.m_arrDeviceData);
                         if (strFilePath != null)
                             Toast.makeText(m_context, strFilePath + "에 로그파일이 생성되었습니다.", Toast.LENGTH_LONG).show();
+                        fileManager.writeStringAsFile4Log(m_pc.m_arrStringData);
 
                         //훈련 결과 저장
                         double dbForwadBackWard = 0.0;
@@ -270,15 +273,6 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
                     }else{
                         Toast.makeText(m_context, "장비로부터 수신된 데이터가 없습니다.", Toast.LENGTH_LONG).show();
                     }
-                    if (m_pc != null) {
-                        try {
-                            m_pc.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        m_pc = null;
-                    }
-                    finish();
                 }
                 break;
             case R.id.btn_move_up:
@@ -325,6 +319,11 @@ public class ManualModeActivity extends Activity implements View.OnClickListener
     {
         Log.e("destroy", "....................................");
         super.onDestroy();
+
+        byte[] command = CommandManager.makeCommand("stop", 0);
+        if (m_pc != null)
+            m_pc.sendCommand(command);
+
         try {
             if(m_pc!=null) {
                 m_pc.close();

@@ -21,6 +21,7 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -108,17 +109,38 @@ public class ResultActivity extends Activity {
             if(sttLastest != null)
                 m_tvWeightRate.setText(sttLastest.getWeight_rate() + " kg");
 
-            float fFowardBackward = Float.parseFloat(String.valueOf((sttLastest.getForward_backward()-Config.FORW_BACK_MIN)/((Config.FORW_BACK_MAX-Config.FORW_BACK_MIN)/100)));
-            float fLeftRight = Float.parseFloat(String.valueOf((sttLastest.getLeft_right()-Config.LEFT_RIGHT_MIN)/((Config.LEFT_RIGHT_MAX-Config.LEFT_RIGHT_MIN)/100)));
+//            float fFowardBackward = Float.parseFloat(String.valueOf((sttLastest.getForward_backward()-Config.FORW_BACK_MIN)/((Config.FORW_BACK_MAX-Config.FORW_BACK_MIN)/100)));
+//            float fLeftRight = Float.parseFloat(String.valueOf((sttLastest.getLeft_right()-Config.LEFT_RIGHT_MIN)/((Config.LEFT_RIGHT_MAX-Config.LEFT_RIGHT_MIN)/100)));
 
-            m_layoutParams.topMargin = (int) (fFowardBackward * 1.6) + 60;
-            m_layoutParams.leftMargin = (int) (fLeftRight * 1.6) + 60;
+//            m_layoutParams.topMargin = (int) (fFowardBackward * 1.6) + 60;
+//            m_layoutParams.leftMargin = (int) (fLeftRight * 1.6) + 60;
+
+            BigDecimal bdForwardBackward = new BigDecimal(sttLastest.getForward_backward());
+            bdForwardBackward = bdForwardBackward.add(new BigDecimal(0.41));
+            if(bdForwardBackward.compareTo(new BigDecimal(0.0))==-1) {
+                m_layoutParams.topMargin = 0;
+            }else if(bdForwardBackward.compareTo(new BigDecimal(0.8))==1) {
+                m_layoutParams.topMargin = 282;
+            }else {
+                m_layoutParams.topMargin = bdForwardBackward.multiply(new BigDecimal(354)).intValue();
+            }
+            BigDecimal bdLeftRight = new BigDecimal(sttLastest.getLeft_right());
+            bdLeftRight = bdLeftRight.add(new BigDecimal(0.45));
+            if(bdLeftRight.compareTo(new BigDecimal(0.0))==-1) {
+                m_layoutParams.leftMargin = 0;
+            }else if(bdLeftRight.compareTo(new BigDecimal(0.8))==1) {
+                m_layoutParams.leftMargin = 282;
+            }else {
+                m_layoutParams.leftMargin = bdLeftRight.multiply(new BigDecimal(360)).intValue();
+            }
 
             Log.e("m_layoutParams", m_layoutParams.topMargin+":"+m_layoutParams.leftMargin);
 
             m_ivPointer.setLayoutParams(m_layoutParams);
             //균형 차트
-            float[] chart1_data = {fLeftRight, fFowardBackward};
+            float fLeftRight = bdLeftRight.multiply(new BigDecimal(360)).divide(new BigDecimal(2.82), 2, BigDecimal.ROUND_UP).floatValue();
+            float fForwardBackward = bdForwardBackward.multiply(new BigDecimal(354)).divide(new BigDecimal(2.82), 2, BigDecimal.ROUND_UP).floatValue();
+            float[] chart1_data = {fLeftRight, fForwardBackward};
             BarData data = new BarData(getXAxisValues4Chart1(), getDataSet4Chart1(chart1_data));
             mChart1.setData(data);
             mChart1.setDescription("");
@@ -137,8 +159,13 @@ public class ResultActivity extends Activity {
                 float[] fData = new float[2];
 //                fData[0] = random.nextFloat()*90;
 //                fData[1] = random.nextFloat()*90;
-                fData[0] = Float.parseFloat(String.valueOf((statics.getForward_backward()-Config.FORW_BACK_MIN)/((Config.FORW_BACK_MAX-Config.FORW_BACK_MIN)/100)));
-                fData[1] = Float.parseFloat(String.valueOf((statics.getLeft_right()-Config.LEFT_RIGHT_MIN)/((Config.LEFT_RIGHT_MAX-Config.LEFT_RIGHT_MIN)/100)));
+                BigDecimal bdTemp0 = new BigDecimal(statics.getLeft_right());
+                bdTemp0 = bdTemp0.add(new BigDecimal(0.45));
+                fData[0] = bdTemp0.multiply(new BigDecimal(360)).divide(new BigDecimal(2.82), 2, BigDecimal.ROUND_UP).floatValue();
+
+                BigDecimal bdTemp1 = new BigDecimal(statics.getForward_backward());
+                bdTemp1 = bdTemp1.add(new BigDecimal(0.41));
+                fData[1] = bdTemp1.multiply(new BigDecimal(354)).divide(new BigDecimal(2.82), 2, BigDecimal.ROUND_UP).floatValue();
                 arrFloatData.add(fData);
 
                 arrData4Chart3.add(new BarEntry(statics.getPractice_time(), i++));
@@ -253,7 +280,6 @@ public class ResultActivity extends Activity {
         BarDataSet barDataSet1 = new BarDataSet(valueSet1, "좌우");
         barDataSet1.setColor(ColorTemplate.PASTEL_COLORS[0]);
         dataSets.add(barDataSet1);
-
 
         int j = 0;
         ArrayList<BarEntry> valueSet2 = new ArrayList<BarEntry>();

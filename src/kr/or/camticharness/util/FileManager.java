@@ -85,4 +85,39 @@ public class FileManager {
             return null;
         }
     }
+
+    public String writeStringAsFile4Log(ArrayList<String> arrayList) {
+        StringBuilder fileContents = new StringBuilder();
+        for(String str:arrayList){
+            fileContents.append(str+"\n");
+//            fileContents.append(deviceData.getLog());
+        }
+        if(fileContents.length()>0) {
+            Date currentTime = new Date();
+            java.text.SimpleDateFormat fileFormat = new java.text.SimpleDateFormat("yyyyMMdd_hhmmss", Locale.KOREA);
+            String strFileName = "log_data_"+fileFormat.format(currentTime)+".txt";
+            String strFolderPath = null;
+            try {
+                strFolderPath = getStorageDir();
+//                strFolderPath = "/Android/data/kr.or.camticharness";
+//                File file = new File(strFolderPath);
+//                if(!file.exists()){
+//                    file.mkdirs();
+//                }
+                File fileTmp = new File(strFolderPath+"/"+strFileName);
+                fileTmp.createNewFile();
+                FileWriter out = new FileWriter(fileTmp);
+//                Log.e("out1", fileTmp.getAbsolutePath());
+//                Log.e("out2", fileTmp.getPath());
+                out.write(fileContents.toString());
+                out.close();
+            } catch (IOException e) {
+                Log.e("error", e.getMessage());
+            }
+            return strFolderPath+"/"+strFileName;
+        }else{
+            return null;
+        }
+    }
+
 }

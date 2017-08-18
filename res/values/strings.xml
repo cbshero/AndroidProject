@@ -38,4 +38,8 @@
     <string name="title_activity_blue_tooth">하네스훈련</string>
     <string name="title_activity_statics">사용자통계</string>
 
+    <string name="title_activity_car_game">CarGameActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
 </resources>

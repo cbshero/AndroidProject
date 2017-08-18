@@ -44,4 +44,6 @@ public class Config {
 	public static final int CONNECTED_DEVICE_BT = 3;
 	public static final int CONNECTED_FAIL_BT = 4;
 	public static final UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+
+	// game difficulty
 }

@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 
 import kr.or.camticharness.util.AutoModeListener;
 import kr.or.camticharness.util.CommandManager;
@@ -79,10 +80,11 @@ public class AutoModeActivity extends Activity implements View.OnClickListener, 
         m_prefer = new Prefer(m_context);
         m_nUserSid = m_prefer.getCurrUserSid();
 
+        m_pc = new ProtocolControl(this);
+
         findView();
 
         init();
-
     }
 
     private void findView(){
@@ -103,13 +105,13 @@ public class AutoModeActivity extends Activity implements View.OnClickListener, 
 
         m_ibPower = (ImageButton) findViewById(R.id.btn_power);
         m_ibPower.setOnClickListener(this);
+
+        m_layoutParams = (LinearLayout.LayoutParams) m_ivPoint.getLayoutParams();
     }
 
     private void init() {
         m_blCurrPower = false;
 
-        m_pc = new ProtocolControl(this);
-        m_layoutParams = (LinearLayout.LayoutParams) m_ivPoint.getLayoutParams();
         //Auto Mode Command Send
         try {
             Thread.sleep(2000);
@@ -193,14 +195,18 @@ public class AutoModeActivity extends Activity implements View.OnClickListener, 
                     }catch (NumberFormatException e){
                         Log.e("NumberFormatException", e.toString());
                     }
+                    Log.e("weight", Integer.parseInt(strWeightRate)+"");
                     try {
-                        Thread.sleep(500);
+                        Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                     command = CommandManager.makeCommand("start", 0);
                     if (m_pc != null)
                         m_pc.sendCommand(command);
+                    Log.e("start", command[0]+":"+command[1]+":"+command[2]+":"+command[3]+":"+command[4]+":"+command[5]+":"+command[6]+":"+command[7]+":"+command[8]+":"+command[9]+":"+command[10]+":"+command[11]+":"+command[12]+":"+command[13]+":"+command[14]);
+
+//                    Toast.makeText(m_context, command[0]+command[1]+command[2]+command[3]+command[4], Toast.LENGTH_SHORT).show();
                     //현재 시간 출력
                     new Thread() {
                         public void run() {
@@ -223,17 +229,24 @@ public class AutoModeActivity extends Activity implements View.OnClickListener, 
                 }
                 break;
             case R.id.ib_stop:
+                command = CommandManager.makeCommand("stop", 0);
+                if (m_pc != null)
+                    m_pc.sendCommand(command);
+                Log.e("stop", m_pc+"====>auto");
+
                 if(m_blStart) {
                     m_blStart = false;
                     m_blStopTime = true;
-                    command = CommandManager.makeCommand("stop", 0);
-                    if (m_pc != null)
-                        m_pc.sendCommand(command);
+                    //정지 버튼 클릭 시 다시 시작 될 수 있도록
+                    m_ibStart.setSelected(false);
+                    m_ibStart.setOnClickListener(this);
 
                     if(m_pc.m_arrDeviceData.size()>0) {
                         FileManager fileManager = new FileManager(m_context);
                         String strFilePath = fileManager.writeStringAsFile(m_pc.m_arrDeviceData);
-                        Toast.makeText(m_context, strFilePath + "에 로그파일이 생성되었습니다.", Toast.LENGTH_LONG).show();
+                        if (strFilePath != null)
+                            Toast.makeText(m_context, strFilePath + "에 로그파일이 생성되었습니다.", Toast.LENGTH_LONG).show();
+                        fileManager.writeStringAsFile4Log(m_pc.m_arrStringData);
 
                         //훈련 결과 저장
                         double dbForwadBackWard = 0.0;
@@ -258,16 +271,6 @@ public class AutoModeActivity extends Activity implements View.OnClickListener, 
                     }else{
                         Toast.makeText(m_context, "장비로부터 수신된 데이터가 없습니다.", Toast.LENGTH_LONG).show();
                     }
-
-                    if (m_pc != null) {
-                        try {
-                            m_pc.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        m_pc = null;
-                    }
-                    finish();
                 }
                 break;
             case R.id.btn_weight_up:
@@ -290,6 +293,12 @@ public class AutoModeActivity extends Activity implements View.OnClickListener, 
     {
         Log.e("destroy", "....................................");
         super.onDestroy();
+
+        byte[] command = CommandManager.makeCommand("stop", 0);
+        if (m_pc != null)
+            m_pc.sendCommand(command);
+        Log.e("stop", m_pc+"====>auto");
+
         try {
             if(m_pc!=null) {
                 m_pc.close();
@@ -328,8 +337,28 @@ public class AutoModeActivity extends Activity implements View.OnClickListener, 
 //            m_data.setLeft_right(0.4);
                 m_tvLoadCell.setText(m_data.getLoadcell()+" kg");
 
-                m_layoutParams.topMargin = (int) (m_data.getForward_backward() * dbForwBackRate)+35;
-                m_layoutParams.leftMargin = (int) (m_data.getLeft_right() * dbLeftRightRate)+35;
+                BigDecimal bdForwardBackward = new BigDecimal(m_data.getForward_backward());
+                bdForwardBackward = bdForwardBackward.add(new BigDecimal(0.41));
+                if(bdForwardBackward.compareTo(new BigDecimal(0.0))==-1) {
+                    m_layoutParams.topMargin = 0;
+                }else if(bdForwardBackward.compareTo(new BigDecimal(0.8))==1) {
+                    m_layoutParams.topMargin = 600;
+                }else {
+                    m_layoutParams.topMargin = bdForwardBackward.multiply(new BigDecimal(750)).intValue();
+                }
+                BigDecimal bdLeftRight = new BigDecimal(m_data.getLeft_right());
+                bdLeftRight = bdLeftRight.add(new BigDecimal(0.45));
+                if(bdLeftRight.compareTo(new BigDecimal(0.0))==-1) {
+                    m_layoutParams.leftMargin = 0;
+                }else if(bdLeftRight.compareTo(new BigDecimal(0.8))==1) {
+                    m_layoutParams.leftMargin = 600;
+                }else {
+                    m_layoutParams.leftMargin = bdLeftRight.multiply(new BigDecimal(750)).intValue();
+                }
+//                Log.e("m_data", bdForwardBackward.floatValue() + ":" + bdLeftRight.floatValue());
+//                Log.e("bigdecimal", m_layoutParams.topMargin + ":" + m_layoutParams.leftMargin);
+//                m_layoutParams.topMargin = (int) (m_data.getForward_backward() * dbForwBackRate)+35;
+//                m_layoutParams.leftMargin = (int) (m_data.getLeft_right() * dbLeftRightRate)+35;
 //            m_layoutParams.topMargin = 220;
 //            m_layoutParams.leftMargin = 220;
 

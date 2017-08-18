@@ -1,7 +1,7 @@
-#Mon Nov 21 15:27:21 KST 2016
-base.0=C\:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_1f72476bf7b80c5a772bf3f8a454f52ff3915ea1
+#Tue Aug 08 18:13:21 KST 2017
+base.0=C\:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1f72476bf7b80c5a772bf3f8a454f52ff3915ea1
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=C\:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_1f46e8373074ca52a602bf8c82dc8fe35c9b892f\\classes.dex
-base.1=C\:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_1f46e8373074ca52a602bf8c82dc8fe35c9b892f
-file.0=C\:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_1f72476bf7b80c5a772bf3f8a454f52ff3915ea1\\classes.dex
+file.1=C\:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_1f46e8373074ca52a602bf8c82dc8fe35c9b892f\\classes.dex
+base.1=C\:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_1f46e8373074ca52a602bf8c82dc8fe35c9b892f
+file.0=C\:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1f72476bf7b80c5a772bf3f8a454f52ff3915ea1\\classes.dex

@@ -14,9 +14,11 @@ import android.widget.Toast;
 
 public class SelectMenuActivity extends Activity implements View.OnClickListener {
     private Vibrator m_vibe;
+    private Context m_context;
     private ImageButton m_ibTraining;
     private ImageButton m_ibTrainingResult;
-    private Context m_context;
+    private ImageButton m_ibDiagnosis;
+    private ImageButton m_ibGame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,10 @@ public class SelectMenuActivity extends Activity implements View.OnClickListener
         m_ibTraining.setOnClickListener(this);
         m_ibTrainingResult = (ImageButton)findViewById(R.id.bt_training_result);
         m_ibTrainingResult.setOnClickListener(this);
+        m_ibDiagnosis = (ImageButton)findViewById(R.id.bt_diagnosis);
+        m_ibDiagnosis.setOnClickListener(this);
+        m_ibGame = (ImageButton)findViewById(R.id.bt_game);
+        m_ibGame.setOnClickListener(this);
     }
 
     private void init(){
@@ -47,14 +53,23 @@ public class SelectMenuActivity extends Activity implements View.OnClickListener
     @Override
     public void onClick(View view) {
         m_vibe.vibrate(50);
+        Intent intent;
         switch (view.getId()){
             case R.id.bt_training:
-                Intent intent = new Intent(SelectMenuActivity.this, SelectActionActivity.class);
+                intent = new Intent(SelectMenuActivity.this, SelectActionActivity.class);
                 startActivity(intent);
                 break;
             case R.id.bt_training_result:
-                Intent intentResult = new Intent(SelectMenuActivity.this, ResultActivity.class);
-                startActivity(intentResult);
+                intent = new Intent(SelectMenuActivity.this, ResultActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.bt_diagnosis:
+                intent = new Intent(SelectMenuActivity.this, SelectActionActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.bt_game:
+                intent = new Intent(SelectMenuActivity.this, GameMenuActivity.class);
+                startActivity(intent);
                 break;
         }
     }

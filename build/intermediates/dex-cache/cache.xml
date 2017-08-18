@@ -3,6 +3,60 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\fbd1f71494967c4274eff3bf857621fa5e94a948\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a31af9d2ab9cd83c079e87a68e341d49b0789665\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\e5ea96481c166823aaf6ff1039160f5fd80eed6f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f84c21fe810dc84df2b254732a7333e1104bcc10\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\3a9ac44fb61cbc7b3f790c408e7c155fb232f0a3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5805b695304e921eae28243f98b8a3abca597b4c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1f46e8373074ca52a602bf8c82dc8fe35c9b892f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\cb87b74a10cb4b7a84c2106b38af38637fbcc5b5\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_ad1793b28148f3db124fe0aed27defd571dec4e9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\3b81f4ce110f454ec601cbcacf83235b0b297502\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\classes_566fa470e9cfe7d3161345b2d85fead79b30c86a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\cbshero\workspace\CamticHarness\libs\android-support-v4.jar"
         jumboMode="true"
         optimize="true"
@@ -12,147 +66,111 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jar="C:\Users\cbshero\android\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_46fe1a533a75652adb90c6ab340efcfc1de65d0a\classes.dex" />
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_9daa3f2cb77f26bf0093fbe5903636bd1a178ee8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\9a8db77411e52b24f90565365d6f411d040df710\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\classes_632adeef23c9d7943a7f2838971c969b7be6ef57\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\c2684bf9da108f215124725e2f7cf4d57d042335\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f890f9a1879cc7ba1ac2ddf89961ec1f82ed6874\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\cb87b74a10cb4b7a84c2106b38af38637fbcc5b5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a50060a8a6e7cf8afb3f67098c549ef3948352fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.1.6\b036abbb61656165da99cf44898e4b9123687e65\MPAndroidChart-v2.1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b036abbb61656165da99cf44898e4b9123687e65">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.1.6_c671a592ad268bd39e03008b03623fe6cae98bb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\workspace\CamticHarness\libs\android-support-v4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1dc1f63cee098b27db60b9a2833fd7ca58f89636">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v4_9a8b5bb6b4bdb80f4fa2251dabecbe54c5cf2be0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\3a9ac44fb61cbc7b3f790c408e7c155fb232f0a3\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0e578c070b79908ff887a7cf786cfcba8cc743c5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\d21be85e7951ab630ec0966f6ef1ca5b474dff27\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_2b5d80db2b22af05e0361b91887c1704fe450d21\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\d21be85e7951ab630ec0966f6ef1ca5b474dff27\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\classes_241a4a015ad4e39e134398b95a09e0dbb5b4251b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\82034fbe4543032199985fa73a3689a1f4930e54\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_ae91255941223ad70d557a55099d04fc3190ae3e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cbshero\.android\build-cache\82034fbe4543032199985fa73a3689a1f4930e54\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5f2c099e74f6b1e908ff7df9873ac64f9d298f5a\classes.dex" />
     </item>
     <item
         is-multidex="true"
         jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.2"
-        sha1="393b3d608d0ef5072511596b8649080c6d656858">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1f72476bf7b80c5a772bf3f8a454f52ff3915ea1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_260f5cfafa4a95bdfcc1658dac060c8166527e06\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_0e42f7b989da27a73f47bf0dcdbcd55fbad4bac4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_83b21d18378e7cd2daa15cc6c10efd6db8b44923\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_32888f627c81181facb15633a203b5129299f24c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_7b44b81f08318f95059bcc296782e5e4eb88c013\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_d0eda369b63153a48759ee82d8fe72f314a1bce7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_a10bed25568c2436e839a43d52832c5487af0520\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="781b144fa8f2d9d5ea8e1983e8fe1df20ee11683">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1f46e8373074ca52a602bf8c82dc8fe35c9b892f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_508954010525b70581932cda4253a8fd5b3e5540\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_a6d1796d76b9df4c73561f352a2f7da5f981b703\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_7ceaf2143c1aaa6e342ce9ee1e814f6bcf9b46af\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_4d0a361e7d121282486a3db8848df1e35afc12e9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_19e61012431aa8e35fd3ac4bdeb1cbca0ab53dec\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7cac3a4b84021ed246c553ac136409168a752e4c\classes.dex" />
+        revision="25.0.0"
+        sha1="40cc717dc7ea544997a259eeb6217364a2b4b55c">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1f72476bf7b80c5a772bf3f8a454f52ff3915ea1\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -165,12 +183,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Users\cbshero\.android\build-cache\c2684bf9da108f215124725e2f7cf4d57d042335\output\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
-        revision="24.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_a0c8e1d7c61cfbd40f70a0044a4e6ee912ab0c84\classes.dex" />
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\cbshero\workspace\CamticHarness\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0446f9e87b53bf2459630ade55888bfcb9ec1632\classes.dex" />
     </item>
 
 </items>

@@ -51,6 +51,26 @@
             android:name="kr.or.camticharness.ResultActivity"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="kr.or.camticharness.GameMenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="kr.or.camticharness.CarGameActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="kr.or.camticharness.PenguinGameActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="kr.or.camticharness.CarGameStartActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="kr.or.camticharness.PenguinGameStartActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
     </application>
 
 </manifest>

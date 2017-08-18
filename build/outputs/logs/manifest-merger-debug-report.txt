@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:2:1-56:12
+ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:2:1-77:12
 	package
 		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:3:5-34
 	android:versionName
@@ -15,17 +15,18 @@ ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:2:1-56:1
 		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\cbshero\.android\build-cache\9a8db77411e52b24f90565365d6f411d040df710\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\cbshero\.android\build-cache\fbd1f71494967c4274eff3bf857621fa5e94a948\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\cbshero\.android\build-cache\d21be85e7951ab630ec0966f6ef1ca5b474dff27\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\cbshero\.android\build-cache\82034fbe4543032199985fa73a3689a1f4930e54\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\cbshero\.android\build-cache\c2684bf9da108f215124725e2f7cf4d57d042335\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\cbshero\.android\build-cache\cb87b74a10cb4b7a84c2106b38af38637fbcc5b5\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\cbshero\.android\build-cache\e5ea96481c166823aaf6ff1039160f5fd80eed6f\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\cbshero\.android\build-cache\3b81f4ce110f454ec601cbcacf83235b0b297502\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\cbshero\.android\build-cache\3a9ac44fb61cbc7b3f790c408e7c155fb232f0a3\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\cbshero\.android\build-cache\cdf879c69bb6f818d628d076857140671683ffc5\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:24.2.1] C:\Users\cbshero\.android\build-cache\9a8db77411e52b24f90565365d6f411d040df710\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:9:9-38
 	android:minSdkVersion
@@ -59,16 +60,17 @@ ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:17:5-80
 	android:name
 		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:17:22-77
 application
-ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:19:5-54:19
-MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\cbshero\workspace\CamticHarness\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:22:5-20
+ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:19:5-75:19
+MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\cbshero\.android\build-cache\9a8db77411e52b24f90565365d6f411d040df710\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\cbshero\.android\build-cache\fbd1f71494967c4274eff3bf857621fa5e94a948\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\cbshero\.android\build-cache\d21be85e7951ab630ec0966f6ef1ca5b474dff27\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\cbshero\.android\build-cache\82034fbe4543032199985fa73a3689a1f4930e54\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\cbshero\.android\build-cache\c2684bf9da108f215124725e2f7cf4d57d042335\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\cbshero\.android\build-cache\cb87b74a10cb4b7a84c2106b38af38637fbcc5b5\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\cbshero\.android\build-cache\e5ea96481c166823aaf6ff1039160f5fd80eed6f\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\cbshero\.android\build-cache\3b81f4ce110f454ec601cbcacf83235b0b297502\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\cbshero\.android\build-cache\3a9ac44fb61cbc7b3f790c408e7c155fb232f0a3\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\cbshero\.android\build-cache\cdf879c69bb6f818d628d076857140671683ffc5\output\AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:22:9-41
 	android:allowBackup
@@ -135,3 +137,43 @@ ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:50:9-53:
 		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:53:13-66
 	android:name
 		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:51:13-43
+activity#kr.or.camticharness.GameMenuActivity
+ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:54:9-57:69
+	android:screenOrientation
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:56:13-50
+	android:theme
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:57:13-66
+	android:name
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:55:13-45
+activity#kr.or.camticharness.CarGameActivity
+ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:58:9-61:69
+	android:screenOrientation
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:60:13-50
+	android:theme
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:61:13-66
+	android:name
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:59:13-44
+activity#kr.or.camticharness.PenguinGameActivity
+ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:62:9-65:69
+	android:screenOrientation
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:64:13-50
+	android:theme
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:65:13-66
+	android:name
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:63:13-48
+activity#kr.or.camticharness.CarGameStartActivity
+ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:66:9-69:69
+	android:screenOrientation
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:68:13-50
+	android:theme
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:69:13-66
+	android:name
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:67:13-49
+activity#kr.or.camticharness.PenguinGameStartActivity
+ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:70:9-73:69
+	android:screenOrientation
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:72:13-50
+	android:theme
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:73:13-66
+	android:name
+		ADDED from C:\Users\cbshero\workspace\CamticHarness\AndroidManifest.xml:71:13-53

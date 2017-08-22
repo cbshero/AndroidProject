@@ -18,7 +18,7 @@ public class PenguinGameActivity extends Activity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_menu);
+        setContentView(R.layout.activity_penguin_game);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -49,17 +49,17 @@ public class PenguinGameActivity extends Activity implements View.OnClickListene
         switch (view.getId()){
             case R.id.bt_high:
                 intent = new Intent(this, PenguinGameStartActivity.class);
-                intent.putExtra("difficulty", 3);
+                intent.putExtra("level", 3);
                 startActivity(intent);
                 break;
             case R.id.bt_middle:
                 intent = new Intent(this, PenguinGameStartActivity.class);
-                intent.putExtra("difficulty", 2);
+                intent.putExtra("level", 2);
                 startActivity(intent);
                 break;
             case R.id.bt_low:
                 intent = new Intent(this, PenguinGameStartActivity.class);
-                intent.putExtra("difficulty", 1);
+                intent.putExtra("level", 1);
                 startActivity(intent);
                 break;
         }

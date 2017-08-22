@@ -45,5 +45,18 @@ public class Config {
 	public static final int CONNECTED_FAIL_BT = 4;
 	public static final UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
-	// game difficulty
+	// game
+	public static final int GAME_TOTAL_REPEAT = 100;
+	public static final int PENUGUIN_TOTAL_HURDLE = 10;
+	public static final int PENUGUIN_HURDLE_COUNT = 6;
+	public static final int PENUGUIN_HURDLE_LINE = 5;
+
+	//hurdle x,y
+	public static final int[][][] PENGUIN_HURDLE_POSTION = {
+			{{350, 450, 94, 83}, {280, 600, 120, 105}, {230, 750, 150, 132}, {170, 900, 180, 158}},//1번 라인
+			{{580, 450, 94, 83}, {550, 600, 120, 105}, {520, 750, 150, 132}, {490, 900, 180, 158}},//2번 라인
+			{{810, 450, 94, 83}, {800, 600, 120, 105}, {790, 750, 150, 132}, {780, 900, 180, 158}},//3번 라인
+			{{1050, 450, 94, 83}, {1070, 600, 120, 105}, {1090, 750, 150, 132}, {1100, 900, 180, 158}},//4번 라인
+			{{1280, 450, 94, 83}, {1300, 600, 120, 105}, {1370, 750, 150, 132}, {1400, 900, 180, 158}}//5번 라인
+	};
 }

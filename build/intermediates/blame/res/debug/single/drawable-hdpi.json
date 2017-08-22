@@ -8,16 +8,20 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\input_speed_manual.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_25_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_25_over.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_reg_bg.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_reg_bg.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\c_1.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\c_1.png"
-    },
-    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\input_5.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\input_5.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\c_1.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\c_1.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg_cc.png",
@@ -44,6 +48,10 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\input_4.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_26.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_26.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m1_1.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m1_1.png"
     },
@@ -68,6 +76,18 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m4_1.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_25.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_25.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\off.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\off.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_28.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_28.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\c_3.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\c_3.png"
     },
@@ -84,16 +104,24 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg_c.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_26_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_26_over.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_off.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_off.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_on.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_on.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_6.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_6.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_on.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_on.png"
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_14.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_14.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m3_2.png",
@@ -106,6 +134,10 @@
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m1_2.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m1_2.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_17_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_17_over.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\p_2.png",
@@ -136,12 +168,20 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\car_bg_1.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_27_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_27_over.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_right_over.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_right_over.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg2_2.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg2_2.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_19_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_19_over.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\input_2.png",
@@ -152,12 +192,24 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\input_1.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_16_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_16_over.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\hit.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\hit.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\input_7.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\input_7.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_3.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_3.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg3.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg3.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg_bb.png",
@@ -172,12 +224,24 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m_3.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_7.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_7.png"
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_24_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_24_over.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_29.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_29.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg4_1.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg4_1.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_23.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_23.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_7.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_7.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\up_over.png",
@@ -188,16 +252,20 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m5_1.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_left.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_left.png"
-    },
-    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_right.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_right.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_left.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_left.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_up_over.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_up_over.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_19.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_19.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_1_over.png",
@@ -210,6 +278,14 @@
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m2_2.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m2_2.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\tab1_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\tab1_over.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_21_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_21_over.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_4_over.png",
@@ -228,8 +304,20 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\c_2.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\a5.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\a5.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_16.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_16.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\a2.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\a2.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\count3.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\count3.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_down.png",
@@ -240,8 +328,16 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m_6.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_14_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_14_over.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\down_over.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\down_over.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\count2.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\count2.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_3_over.png",
@@ -252,8 +348,28 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m_7.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_20.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_20.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_22_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_22_over.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\peng_bg_1.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\peng_bg_1.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\count1.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\count1.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_18.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_18.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_29_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_29_over.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg_bbb.png",
@@ -272,40 +388,72 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\up.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg4.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg4.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_left_over.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_left_over.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_17.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_17.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_1.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_1.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\score.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\score.png"
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_22.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_22.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\input_time.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\input_time.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m_4.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m_4.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m6_3.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m6_3.png"
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\on.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\on.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\title_t.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\title_t.png"
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\score.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\score.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m6_3.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m6_3.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\p_5.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\p_5.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_2_over.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_2_over.png"
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\title_t.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\title_t.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m4_3.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m4_3.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_2_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_2_over.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\tab1.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\tab1.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_23_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_23_over.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_15.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_15.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m1_3.png",
@@ -322,6 +470,14 @@
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_8.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_8.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_20_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_20_over.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\tab2_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\tab2_over.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\a3.png",
@@ -372,12 +528,20 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\input_9.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m_2.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m_2.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m_2.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m_2.png"
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\tab2.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\tab2.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_18_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_18_over.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\p_4.png",
@@ -386,6 +550,14 @@
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\car_bg_2.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\car_bg_2.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_27.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_27.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_24.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_24.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m5_3.png",
@@ -400,16 +572,32 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\p_1.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg_b.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg_b.png"
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_15_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_15_over.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg5.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg5.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_28_over.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_28_over.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m_5.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m_5.png"
     },
     {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg_b.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg_b.png"
+    },
+    {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\input_3.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\input_3.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_21.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_21.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_5.png",
@@ -424,11 +612,15 @@
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\btn_2.png"
     },
     {
-        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\input_6.png",
-        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\input_6.png"
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\bg2.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\bg2.png"
     },
     {
         "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\m_8.png",
         "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\m_8.png"
+    },
+    {
+        "merged": "C:\\Users\\cbshero\\workspace\\CamticHarness\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\input_6.png",
+        "source": "C:\\Users\\cbshero\\workspace\\CamticHarness\\res\\drawable-hdpi\\input_6.png"
     }
 ]
